@@ -1,0 +1,41 @@
+{
+  "name": "el_jeevee_money_tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx env-cmd nodemon src/index.js",
+    "test": "npx env-cmd -f .env.test jest",
+    "web": "node src/index.js",
+    "test:coverage": "yarn test --coverage"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.1",
+    "ajv": "^8.8.2",
+    "axios": "^0.24.0",
+    "config": "^3.3.6",
+    "env-cmd": "^10.1.0",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.5",
+    "knex": "^0.95.14",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^4.0.3",
+    "koa2-swagger-ui": "^5.3.0",
+    "mysql2": "^2.3.3",
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.1.6",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.2.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "jest-each": "^27.4.2",
+    "nodemon": "^2.0.14"
+  }
+}
